@@ -192,7 +192,7 @@ export function FaucetButton({
     <div className="flex w-full flex-col text-center">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(claimFunds)}>
-          <Button variant="primary" className="w-full gap-2" type="submit">
+          <Button variant="primary" className="mb-2 w-full gap-2" type="submit">
             {claimMutation.isPending ? (
               <>
                 Claiming <Spinner className="size-3" />
