@@ -27,7 +27,6 @@ export default function Page({
   )
     ? (searchParams.interval as "day" | "week")
     : "week";
-
   return (
     <InAppWalletAnalytics
       clientId={params.project_slug}

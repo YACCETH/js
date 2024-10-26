@@ -28,9 +28,9 @@ export async function getInAppWalletUsage(args: {
       },
     },
   );
-  const json = await res.json();
+  const json = await res?.json();
 
-  if (res.status !== 200) {
+  if (!res || res.status !== 200) {
     throw new Error(json.message);
   }
 

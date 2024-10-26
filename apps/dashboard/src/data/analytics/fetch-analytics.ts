@@ -22,7 +22,7 @@ export async function fetchAnalytics(input: string | URL, init?: RequestInit) {
     );
   }
 
-  return fetch(API_SERVER_URL, {
+  return await fetch(API_SERVER_URL, {
     ...init,
     headers: {
       "content-type": "application/json",
